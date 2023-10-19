@@ -1,8 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.AndreevVY.Sprint1.Task0.V0.Lib;
-
-namespace Tyuiu.AndreevVY.Sprint1.Task0.V0.Test
+using Tyuiu.AndreevVY.Sprint1.Task7.V21.Lib;
+namespace Tyuiu.AndreevVY.Sprint1.Task7.V21.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -11,8 +10,8 @@ namespace Tyuiu.AndreevVY.Sprint1.Task0.V0.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            var res = ds.Calculate();
-            Assert.AreEqual(2, res);
+            double wait = ds.Calculate(1, 1);
+            Assert.AreEqual(-2.314, wait, 0.001);
         }
     }
 }
